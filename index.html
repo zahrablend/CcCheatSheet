@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Cheat Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Cheat Sheet</h1>
+    <p>
+        For more information on each part - press on title name, eg. press "Selectors" to see more on this topic.
+    </p>
+
+    <table>
+        <tr>
+            <th rowspan=3 id="sel-back-color" class="vertical"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">Selectors</a></th>
+            <td>type | class | ID | universal selector | attribute | attribute selector | pseudo-class selector</td>
+            <td>. for class | # for ID | * for universal selector | eg. attribute selector [href] | : for pseudo class</td>
+            <td>Attribute selectors list: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#syntax</td>
+        </tr>
+        <tr>
+            <td>Chaining</td>
+            <td>combining multiple selectors</td>
+            <td>eg. h1.special {} | this will select only the &lt;h1&gt; elements with a class of special</td>
+        </tr>
+        <tr>
+            <td>Descendant Combinator</td>
+            <td>selecting descendants (elements that are nested within other HTML elements)</td>
+            <td>eg. .main-list li {} | .main-list selects the element with the.main-list class (the &lt;ul&gt; element). The descendant li‘s are selected by adding &lt;li&gt; to the selector, separated by a space. This results in .main-list li as the final selector.</td>
+        </tr>
+        <tr>
+            <td id="emply-cell"></td>
+            <th><a href="https://www.cssportal.com/css-properties/index.php" target="_blank">Property</a></th>
+            <th><a href="https://www.w3resource.com/css/CSS-values.php#:~:text=What%20are%20CSS%20values%3F%20CSS%20values%20are%20set,can%20be%20preceded%20by%20%2B%20or%20-%20sign." target="_blank">Values</a></th>
+            <th><a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">Units</a></th>
+        </tr>
+        <tr>
+            <th rowspan=10 id="typ-back-color" class="vertical"><a href="https://cssreference.io/typography/" target="_blank">Typography</a></th>
+            <td>font-family</td>
+            <td>"name"</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@font-face</td>
+            <td>path to the font’s source for local fonts | url for Google fonts</td>
+            <td>Example: @font-face {font-family: "name"; src: url('...)}</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td></td>
+            <td>px | em | vw | </td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>bold | normal | 'numeric'</td>
+            <td>for numeric (100 to 900)</td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td>normal | italic | oblique</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td></td>
+            <td>unitless numbers | px</td>
+        </tr>
+        <tr>
+            <td>word-spacing</td>
+            <td>normal | length | initial | inherit</td>
+            <td>for length px and other</td>
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td>normal|length|initial|inherit</td>
+            <td>px | other for length</td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>left | right | center | justify | initial | inherit</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>name | hexadecimal | rgb() | hsl() | rgba() | hsla()</td>
+            <td>for rgb (0 to 255) | for hsl (0 to 255 value plus 2 values in %) | for a (0.0 to 1.0)</td>
+        </tr>
+        <tr>
+            <th rowspan=2 id="bac-back-color" class="vertical"><a href="https://cssreference.io/backgrounds/" target="_blank">Background</a></th>
+            <td>background-color</td>
+            <td>transparent | initial | inherit | "color"</td>
+            <td>same as for color property</td>
+        </tr>
+        <tr>
+            <td>background-image</td>
+            <td>none | url() | linear-gradient(color1, color2) | linear-gradient(deg, color1 color2);</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th rowspan=9 id="dis-back-color" class="vertical"><a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">Display and positioning</a></th>
+            <td>margin</td>
+            <td>auto</td>
+            <td>px</td>
+        </tr>
+        <tr>
+            <td>padding</td>
+            <td>inherit</td>
+            <td>% | length values</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>width | style | color</td>
+            <td>various</td>
+        </tr>
+        <tr>
+            <td>overflow</td>
+            <td>visible | hidden | scroll</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>z-index</td>
+            <td></td>
+            <td>positive or negative integers</td>
+        </tr>
+        <tr>
+            <td>position</td>
+            <td>static | relative | absolute | fixed</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>display</td>
+            <td>block | inline | inline-block</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>left | right</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>clear</td>
+            <td>left | right | none</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th id="oth-back-color" class="vertical"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor" target="_blank">Other</a></th>
+            <td>cursor</td>
+            <td>auto | default | none</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

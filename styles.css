@@ -1,0 +1,87 @@
+﻿table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    font-family: monospace;
+}
+/* Vertically rotates text in 1st column*/
+.vertical {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+h1, th {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+}
+
+th {
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: lavenderblush;
+}
+
+h1, p, table {
+    margin: auto 10% 2% 10%;
+}
+
+td {
+    font-family: Courier, monospace;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+/*links styling*/
+a {
+    text-decoration: none;
+}
+
+    a:link {
+        color: black;
+    }
+
+    a:visited {
+        color: grey;
+    }
+
+    a:hover {
+        color: navy;
+    }
+
+/*background colors*/
+#sel-back-color {
+    background-color: lightsteelblue;
+}
+
+#typ-back-color {
+    background-color: lightgrey;
+}
+
+#bac-back-color {
+    background-color: whitesmoke;
+}
+
+#dis-back-color {
+    background-color: thistle;
+}
+
+#oth-back-color {
+    background-color: oldlace;
+}
+
+#emply-cell {
+    background-color: lavenderblush;
+}
