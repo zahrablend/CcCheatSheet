@@ -1,7 +1,9 @@
 # CcCheatSheet
  Challenge Project: Build Your Own Cheat Sheet for Codecademy Full-Stack Engineer path
-! Problem with displaying vertical text in Firefox (both Chrome and Edge are OK). In Firefox the text flows on a left border of a table, whereas in other 2 browsers it stays centered. Possible solutions to fix that welcome.
 
+--
+Problem with displaying vertical text in Firefox (both Chrome and Edge are OK). In Firefox the text flows on a left border of a table, whereas in other 2 browsers it stays centered. Possible solutions to fix that welcome.
+--
 Project Goals
 
 Building your own reference cheat sheet.
